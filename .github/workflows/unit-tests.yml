@@ -38,7 +38,7 @@ jobs:
         run: |
           python -m pip install -e plugins/hanlp_trie
           python -m pip install -e plugins/hanlp_common
-          python -m pip install -e .
+          python -m pip install -e '.[full]'
           python -m pip install pytest
 
       - name: Cache data
